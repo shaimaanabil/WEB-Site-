@@ -1,0 +1,91 @@
+/*
+      ==========================
+             public Styles
+      ==========================
+*/
+* , *:after, *:before{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: Tahoma, Arial;
+}
+.container { 
+    margin: auto;
+    width: 85% ;
+}
+/*
+      ==========================
+             Navbar Styles
+      ==========================
+*/
+
+.Navbar {
+    padding: 20px 0px;
+    background-color: #ddd;
+    overflow: hidden;
+    position: relative;
+}
+.Navbar .Logo {
+    width: 50%;
+    float: left;
+}
+.Navbar .ul-list{
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+.Navbar input , .Navbar label {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+.Navbar label{
+    display: block;
+    width: 22px;
+    height: 15px;
+    background-image: url('../Images/Open-Menu.jpg');
+    background-size: cover;
+    padding: 20px;
+
+}
+.Navbar input{
+    display: none;
+}
+.Navbar .Logo .Logo-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.Navbar .ul-list .list-item {
+    display: inline-block;
+    
+}
+.Navbar .ul-list .list-item a{
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+.Navbar .ul-list .list-item a:hover {
+    background: #222;
+    color: #ddd;
+}
+
+@media (max-width : 1268px){
+    .Navbar .Logo{
+        width: 100%;
+        float: left;
+    }
+    .Navbar .ul-list{
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+    .Navbar .ul-list .list-item{
+        display: block;
+        text-align: center;
+    }
+    
+}
