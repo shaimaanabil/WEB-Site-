@@ -9,7 +9,7 @@ padding: 0;
 }
 
 body{
-    font-family: Tahoma, Arial;
+    font-family: lucida Sans;
 }
 .container { 
     margin: auto;
@@ -23,7 +23,7 @@ body{
 
 .Navbar {
     padding: 20px 0px;
-    background-color: #ddd;
+    background-color: #fff;
     overflow: hidden;
     position: relative;
 }
@@ -43,11 +43,12 @@ body{
 }
 .Navbar label{
     display: block;
-    width: 22px;
-    height: 15px;
-    background-image: url('../Images/Open-Menu.jpg');
+    width: 11px;
+    height: 8px;
+    background-image: url('../Images/Navbar/Open-menu.png');
     background-size: cover;
-    padding: 20px;
+    padding: 15px;
+    cursor: pointer;
 
 }
 .Navbar input{
@@ -69,11 +70,87 @@ body{
     font-weight: bold;
 }
 .Navbar .ul-list .list-item a:hover {
-    background: #222;
-    color: #ddd;
+    color: #eb5424;
+}
+.Navbar input:checked ~ .ul-list{
+    display: block;
+}
+.Navbar input:checked ~ label{
+    background-image: url('../Images/Navbar/Close-menu.png');
+    background-size: cover;
 }
 
-@media (max-width : 1268px){
+/*
+      ==========================
+             Home Styles
+      ==========================
+*/
+.home{
+    background-image: url('../Images/Home/Home.jpg');
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+.home .home-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.home .home-information .home-title{
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+.home .home-information .home-info{
+font-size: 35px;
+color: #eb5424;
+margin-bottom: 10px;
+}
+
+.home .home-information .home-desc{
+font-size: 20px;
+line-height: 1.5;
+color: #888;
+margin-bottom: 20px;
+
+}
+.home .home-information .home-desc span{
+color: #545252
+}
+.home .home-information .home-btn{
+background: #eb5424;
+color: #fff;
+width: 150px;
+font-size: 18px;
+border: 0;
+padding: 15px;
+cursor: pointer;
+}
+.home .home-information .home-btn:hover{
+    background: #dedede;
+    color: #eb5424;
+
+}
+
+
+/*
+      ==========================
+             Media Query Styles
+      ==========================
+*/
+@media (min-width : 933px){
+    .Navbar label{
+        display: none;
+    }
+}
+
+@media (max-width : 933px){
     .Navbar .Logo{
         width: 100%;
         float: left;
@@ -82,6 +159,7 @@ body{
         width: 100%;
         float: left;
         margin-top: 20px;
+        display: none;
     }
     .Navbar .ul-list .list-item{
         display: block;
@@ -89,3 +167,28 @@ body{
     }
     
 }
+@media (max-width : 873px){
+   
+    .home .home-information .home-title{
+        font-size: 35px;
+        margin-bottom: 10px;
+        color: #5e5e5e;
+    }
+    .home .home-information .home-info{
+        font-size: 20px;
+    }
+    .home .home-information .home-desc{
+       font-size: 15px;
+       line-height: 1.25;
+       margin-bottom: 10px;    
+     }
+     .home .home-information .home-btn{
+        width: 105px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 0;
+        padding: 10px;
+        cursor: pointer;
+        }
+    }
+
