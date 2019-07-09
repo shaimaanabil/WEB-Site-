@@ -10,6 +10,7 @@ padding: 0;
 
 body{
     font-family: lucida Sans;
+    height: 1500px;
 }
 .container { 
     margin: auto;
@@ -138,12 +139,94 @@ cursor: pointer;
 
 }
 
+/*
+      ==========================
+             Work Styles
+      ==========================
+*/
+.work{
+    height: auto;
+    padding: 50px 0;
+    background: #fff;
+}
+.work .work-title{
+    font-size: 60px;
+}
+.work .work-title span{
+    font-weight: normal;
+}
+.work .part{
+    margin-top: 20px;
+    margin-left: 5%;
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    height: auto;
+    padding: 100px 0px;
+    border: 1px solid rgb(129, 129, 129);
+    text-align: center;
+}
+.work .first-part{
+    margin-left: 0%;
+
+}
+.work .part .icon{
+    color: rgb(129, 129, 129);
+    margin-bottom: 20px;
+}
+.work .part .part-title{
+    font-size: 25px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+.work .part .line{
+    width: 60%;
+    color: rgb(129, 129, 129);
+    margin: auto;
+    margin-bottom: 20px;
+}
+.work .part .part-desc{
+    font-size: 14px;
+    padding: 20px;
+    color: #5e5e5e
+}
+
+/*
+      ==========================
+             Portfolio Styles
+      ==========================
+*/
+.portfolio{
+    
+}
+/*
+      ==========================
+             Home Styles
+      ==========================
+*/
+
 
 /*
       ==========================
              Media Query Styles
       ==========================
 */
+
+@media (max-width : 768px){
+    .work .part{
+        width: 47%;
+    }
+    .work .last{
+        margin-left: 0%;
+    }
+}
+@media (max-width : 575px){
+    .work .part{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
 @media (min-width : 933px){
     .Navbar label{
         display: none;
@@ -168,7 +251,6 @@ cursor: pointer;
     
 }
 @media (max-width : 873px){
-   
     .home .home-information .home-title{
         font-size: 35px;
         margin-bottom: 10px;
@@ -191,4 +273,5 @@ cursor: pointer;
         cursor: pointer;
         }
     }
+  
 
