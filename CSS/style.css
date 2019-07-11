@@ -9,7 +9,7 @@ padding: 0;
 }
 
 body{
-    font-family: lucida Sans;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 1500px;
 }
 .container { 
@@ -261,6 +261,86 @@ background: #eb5424;
     opacity: 1;
 }
 
+/*
+      ==========================
+        profile-skills Styles
+      ==========================
+*/
+.profile-skills{
+    padding: 50px 0px;
+    overflow: hidden;
+}
+.profile-skills .profile{
+    width: 50%;
+    float: left;
+}
+.profile-skills .skills{
+    width: 50%;
+    float: left;
+}
+.profile-skills .profile .profile-title , 
+.profile-skills .skills .skills-title{
+    font-size: 40px;
+}
+.profile-skills .profile .profile-title span , 
+.profile-skills .skills .skills-title span{
+    font-weight: normal
+}
+.profile-skills .profile ul{
+    padding: 40px 0px;
+    list-style: none;
+}
+.profile-skills .profile ul li{
+    padding: 10px;
+    color: #5e5e5e;
+}
+.profile-skills .profile ul li span{
+    font-weight: bold;
+    padding-right: 40px;
+    width: 10%;
+    display: inline-block;
+    color: black;
+}
+.profile-skills .skills .skill-desc{
+    font-size: 15px;
+    padding: 40px 0px 20px;
+    color: #5e5e5e;
+}
+.profile-skills .skills .bar{
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+.profile-skills .skills .bar .bar-title{
+    float: left;
+    margin-bottom: 10px;
+}
+.profile-skills .skills .bar .prec{
+    float: right;
+    margin-right: 100px;
+    color: #5e5e5e;
+}
+.profile-skills .skills .bar .parent{
+    background: rgb(214, 214, 214);
+    height: 2px;
+    clear: both;
+}
+.profile-skills .skills .bar .parent span{
+    background: #eb5424;
+    display: block;
+    height: 2px;
+}
+.profile-skills .skills .bar .parent .sp1{
+width: 95%
+}
+.profile-skills .skills .bar .parent .sp2{
+width: 85%
+}
+.profile-skills .skills .bar .parent .sp3{
+width: 90%
+}
+
+
+
 
 /*
       ==========================
@@ -290,6 +370,14 @@ background: #eb5424;
     .work .part{
         width: 100%;
         margin-left: 0px;
+    }
+    .box div{
+        width: 100%;
+    }
+    .profile-skills .profile , 
+    .profile-skills .skills{
+        width: 100%;
+        float: none;
     }
 }
 
